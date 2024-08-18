@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar">
+        <div class="nav-item hover-image">
+            <img src="https://images.yourstory.com/cs/images/companies/logosC141575978425306png?fm=auto&ar=1%3A1&mode=fill&fill=solid&fill-color=fff&format=auto&w=384&q=75"
+                class="logo" alt="logo" />
+        </div>
+        <div class="nav-item hover-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
+            </svg>
+            <span>Swiggy Corporate</span>
+        </div>
+        <div class="nav-item hover-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+            <span>Search</span>
+        </div>
+        <div class="nav-item hover-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 384 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M374.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-320 320c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l320-320zM128 128A64 64 0 1 0 0 128a64 64 0 1 0 128 0zM384 384a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+            </svg>
+            <span>Offers</span>
+        </div>
+        <div class="nav-item hover-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+            </svg>
+            <span>Help</span>
+        </div>
+        <div class="nav-item hover-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+            </svg>
+            <span>Sign In</span>
+        </div>
+        <div class="nav-item hover-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 576 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+            </svg>
+            <span>Cart</span>
+        </div>
+    </nav>
+    <section>
+        <!--Items Option-->
+        <div class="items-options">
+            <h1>What's on your mind?</h1>
+            <div class="arrows">
+                <span>
+                    <svg class="arrow-1 hover-image" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                    </svg>
+                    <svg class="arrow-2 hover-image" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item-indi">
+                <img src="https://static.toiimg.com/thumb/54477040.cms?imgsize=272412&width=800&height=800"
+                    alt="parantha" />
+                <p>Parantha</p>
+            </div>
+            <div class="item-indi">
+                <img src="https://media.istockphoto.com/id/545286388/photo/chinese-food-blank-background.jpg?s=612x612&w=0&k=20&c=pqOIy07YKO5PlU5VxjscwTGRrrZ8PluKMUjSOz-II60="
+                    alt="Chinese" />
+                <p>Chinese</p>
+            </div>
+            <div class="item-indi">
+                <img src="https://media.vogue.in/wp-content/uploads/2020/08/chole-bhature-recipe.jpg"
+                    alt="Chole Bhature" />
+                <p>Chole Bhature</p>
+            </div>
+            <div class="item-indi">
+                <img src="https://theindianclaypot.com/content/images/wp-content/uploads/2018/11/chole-poori-1.jpg"
+                    alt="Poori" />
+                <p>Poori Chole</p>
+            </div>
+            <div class="item-indi">
+                <img src="https://m.economictimes.com/thumb/msid-99118050,width-1200,height-900,resizemode-4,imgsize-64776/idli_istock.jpg"
+                    alt="Idli" />
+                <p>Idli</p>
+            </div>
+            <div class="item-indi">
+                <img src="https://recipesblob.oetker.in/assets/d8a4b00c292a43adbb9f96798e028f01/1272x764/pizza-pollo-arrostojpg.webp"
+                    alt="pizza" />
+                <p>Pizza</p>
+            </div>
+            <div class="item-indi">
+                <img src="https://images.pexels.com/photos/14477873/pexels-photo-14477873.jpeg?cs=srgb&dl=pexels-karthikeyan-anand-271239097-14477873.jpg&fm=jpg"
+                    alt="Samosa" />
+                <p>Samosa</p>
+            </div>
+        </div>
+        <hr><br>
+    </section>
+    <!--Restaurant Section-->
+    <section>
+        <div style="display: flex; justify-content: space-between;">
+            <h1>Top Restaurant chains in Delhi</h1>
+            <div class="arrows">
+                <span>
+                    <svg class="arrow-1 hover-image" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                    </svg>
+                    <svg class="arrow-2 hover-image" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <!--Restaurant Chains-->
+        <div class="restaurant-section">
+            <div class="image-container hover-image">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_400/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/7f76a072-c1bc-4d74-ac56-33e0eea20c1e_5934.JPG"
+                    alt="pizzahut" />
+                <br>
+                <h3>Burger King</h3>
+                <span>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                        </svg>
+                        4.5 • 30-45mins
+                    </p>
+                </span>
+                <p>Burgers, American</p>
+                <p>Rajouri Garden</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://b.zmtcdn.com/data/pictures/2/20011222/c89f6aa9ae824f02983d50245ed3862e.jpg?fit=around|960:500&crop=960:500;*,*"
+                    alt="KFC" />
+                <h3>KFC</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.7 • 30-35mins
+                </p>
+                <p>Burgers, Rolls & Wraps, Fast Food</p>
+                <p>Connaught Place</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-01/24/full/20230124135458.jpg"
+                    alt="TBC" />
+                <h3>The Burger Club</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    3.9 • 30-40mins
+                </p>
+                <p>American, Beverages & Desserts</p>
+                <p>Shalimar Bagh</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/6/18384116/3973d350a93af15c5d302627bf10b4ab.jpg"
+                    alt="Theobroma" />
+                <h3>Theobroma</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.6 • 30-35mins
+                </p>
+                <p>Bakery & Desserts</p>
+                <p>Kamla Nagar</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://b.zmtcdn.com/data/pictures/1/20284131/47686f1feac71ee1e28cdea5aeebcb7f.jpg"
+                    alt="Chinese Wok" />
+                <h3>Chinese Wok</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Chinese, Asian, Tibetian, Desserts</p>
+                <p>Omaxe Mall</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h1>Restaurants with online food delivery in Delhi</h1>
+        <div class="filters">
+            <!--Filter Options-->
+            <div class="filter-options hover-image">
+                <p>filter <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M3.9 54.9C10.5 40.9 24.5 32 40 32l432 0c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9 320 448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6l0-79.1L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z" />
+                    </svg></p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Sort By <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                        viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8L32 224c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8l256 0c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z" />
+                    </svg></p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Fast Delivery</p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>New on swiggy</p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Rating 4.0+</p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Pure Veg</p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Offers</p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Rs. 300-Rs. 600</p>
+            </div>
+            <div class="filter-options hover-image">
+                <p>Less than Rs. 300</p>
+            </div>
+            
+        </div>
+        <!--Restaurant Names-->
+        <div class="restaurant-section">
+            <div class="image-container hover-image">
+                <img src="https://b.zmtcdn.com/data/pictures/1/20284131/47686f1feac71ee1e28cdea5aeebcb7f.jpg" alt="chinesewok"/>
+                <h3>Chinese Wok</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Chinese, Asian, Tibetian, Desserts</p>
+                <p>Omaxe Mall</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/8febdcc128f3e7be17cdf6700dcfc51b" alt="southy-cafe"/>
+                <h3>Southy Cafe</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>South Indian</p>
+                <p>Bengali Market, Connaught Place</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://dynl.mktgcdn.com/p/kcIdWEAbf_C1nNLIlVecIVGtR48A6MLeiSCbTY_QoJE/619x534.jpg" alt="subway">
+                <h3>Subway</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Salads, Snacks, Desserts, Beverages</p>
+                <p>Food Forum Food Court</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://static.abplive.com/wp-content/uploads/2020/09/04134508/sukhdev.jpg" alt="murthal">
+                <h3>Murthal NO.1 Parantha</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>North Indian, Snacks, Punjabi, Desserts</p>
+                <p>Karol Bagh</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://lh3.googleusercontent.com/DC1RFJupHturkaHbMHa7IaZio52_0ebUJ-TIxLja155zukqmzBFDt_Ae2vqVAjgrV3dGgWLst4mVQRZtmAPkJxcowGb8f7tI8G6nnC5EaQ=w512-rw" alt="cheesecake">
+                <h3>Cheesecake and Co.</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Bakery & Desserts</p>
+                <p>Asaf Ali road</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://www.sitaramdiwanchand.co.in/images/about-img.png" alt="sita-ram-diwan-chand"/>
+                <h3>Sita Ram Diwan Chand</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Street food, Snacks</p>
+                <p>Paharganj</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://cdn.tasteatlas.com/images/dishrestaurants/6d4b41ef0f0548608a7a36101466e967.jpg?w=600" alt="BTW"/>
+                <h3>BTW</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Street food, Indian, North Indian, Desserts</p>
+                <p>Kamla Nagar</p>
+            </div>
+            <div class="image-container hover-image">
+                <img src="https://images.jdmagicbox.com/comp/def_content_category/barista-lavazza-espresso-bar-11979703-xmdkwhwwe3.jpg" alt="barista"/>
+                <h3>Barista Coffee</h3>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                    4.2 • 25-30mins
+                </p>
+                <p>Beverages, Snacks, Desserts</p>
+                <p>Connaught Place</p>
+            </div>
+        </div>
+    </section>
+    <!--Places to eat across cities-->
+    <hr>
+    <section>
+        <h1> Best Places To Eat Across Cities</h1>
+        <div class="city-section">
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Bangalore</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Pune</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Mumbai</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Delhi</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Hyderabad</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Kolkata</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Chennai</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Chandigarh</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Ahemdabad</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Jaipur</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Best Restaurants in Nagpur</p>
+            </div>
+            <div class="city-names hover-image">
+                <p>Show More    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8l256 0c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg></p>
+            </div>
+        </div>
+    </section>
+    <!--Best Cuisines Near Me-->
+    <br>
+    <section>
+        <h1> Best Cuisines Near Me</h1>
+        <div class="city-section">
+            <div class="cuisines-Name hover-image">
+                <p>Chinese Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>South Indian Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>Indian Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>Kerala Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>North Indian Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>Korean Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>Sea Food Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>Bengali Restaurant Near me</p>
+            </div>
+            <div class="cuisines-Name hover-image">
+                <p>Show More    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8l256 0c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg></p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <h1>Explore Every Restaurant Near Me</h1>
+        <div class="explore-section">
+            <div class="restaurant hover-image">
+                <p>Explore Restaurants Near Me</p>
+            </div>
+            <div class="restaurant hover-image">
+                <p>Explore Top Rated Restaurant Near Me</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="download">
+            <p>For better experience,download the swiggy app now</p>
+            <div>
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/google-play-badge-logo-black-and-white.png" alt="googleplay" class="hover-image"/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="appstore" class="hover-image" />
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="https://pngimagesfree.com/wp-content/uploads/Swiggy-Logo-PNG-White@.png" alt="Swiggy Logo" class="footer-logo hover-image">
+                <p>© 2024 Bundl Technologies Pvt. Ltd</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Swiggy One</a></li>
+                    <li><a href="#">Swiggy Instamart</a></li>
+                    <li><a href="#">Swiggy Genie</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>We deliver to:</h3>
+                <ul>
+                    <li>Bangalore</li>
+                    <li>Gurgaon</li>
+                    <li>Hyderabad</li>
+                    <li>Delhi</li>
+                    <li>Mumbai</li>
+                    <li>Pune</li>
+                </ul>
+                <select>
+                    <option>589 cities</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
